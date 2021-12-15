@@ -11,3 +11,4 @@ TEST(ViewDirectory, CorrectPrintFilesAndAccountsEmptyPath) {
     EXPECT_EQ(ss1.str(), "");
     EXPECT_EQ(ss2.str(), "");
 }
+
