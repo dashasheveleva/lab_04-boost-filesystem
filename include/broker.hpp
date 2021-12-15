@@ -21,7 +21,7 @@ private:
     std::vector<fs::path> paths;
 
 public:
-    explicit Broker (const std::string& path);
+    explicit Broker(const std::string& path);
     std::stringstream PrintFiles();
     std::stringstream PrintAccounts() const;
 };

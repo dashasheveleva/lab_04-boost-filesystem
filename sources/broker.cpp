@@ -51,7 +51,7 @@ std::stringstream Broker::PrintAccounts() const {
                     max.stem().string().substr
                               (TimePosition, PositionLength))) {
                     max = y;
-                };
+                }
                 ++n;
             }
         }
