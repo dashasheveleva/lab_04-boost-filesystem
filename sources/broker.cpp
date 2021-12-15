@@ -17,7 +17,7 @@ Broker::Broker(const std::string& path) {
 }
 std::stringstream Broker::PrintFiles() {
     std::stringstream ss;
-    const boost::regex re("^(balance)_\\d{8}_\\d{8}");
+    const std::regex re("^(balance)_\\d{8}_\\d{8}");
     for (const fs::directory_entry& x : fs::directory_iterator{pathFTP}) {
         if (fs::is_directory(x.path())) {
             for (const fs::directory_entry& y:
